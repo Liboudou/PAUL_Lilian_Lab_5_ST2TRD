@@ -10,8 +10,9 @@ namespace Test
         
         public static void Main(string[] args)
         {
-            var i = 0;
-
+            Test_item_creation test_1 = new Test_item_creation();
+            Console.WriteLine("Test_1 : Item_creation = "+ test_1.run());
+            
         }
     }
 }
