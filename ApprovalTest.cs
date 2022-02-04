@@ -14,7 +14,7 @@ namespace csharp
         [Test]
         public void ThirtyDays()
         {
-            
+            //var lines = File.ReadAllLines("ThirtyDays.txt");
             StringBuilder fakeoutput = new StringBuilder();
             Console.SetOut(new StringWriter(fakeoutput));
             Console.SetIn(new StringReader("a\n"));
