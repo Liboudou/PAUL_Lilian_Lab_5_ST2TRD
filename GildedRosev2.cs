@@ -3,11 +3,11 @@ using System.Reflection;
 
 namespace csharp
 {
-    public class GildedRose
+    public class GildedRosev2
     {
         IList<Item> Items;
 
-        public GildedRose(IList<Item> Items)
+        public GildedRosev2(IList<Item> Items)
         {
             this.Items = Items;
         }
@@ -30,9 +30,9 @@ namespace csharp
 
                     Items[i].SellIn = Items[i].SellIn - 1;
                 }
-                else if (Items[i].GetType() == typeof(Cheese_Item)) 
+                else if (Items[i].GetType() == typeof(Cheese_Item))
                 {
-                    if (Items[i].Quality < 50 & Items[i].SellIn <= 0)
+                    if (Items[i].Quality < 50 & Items[i].SellIn <= 0) // le = check
                     {
                         Items[i].Quality +=1;
                         if (50 -Items[i].Quality >=2)

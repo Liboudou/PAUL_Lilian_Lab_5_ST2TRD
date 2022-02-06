@@ -18,7 +18,7 @@ public class Tests
     {
         try
         {
-            Item test = new Item{ Name = "foo", SellIn = 0, Quality = 0 };
+            Item test = new Classic_Item(){ Name = "foo", SellIn = 0, Quality = 0 };
         }
         catch (Exception e)
         {

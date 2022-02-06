@@ -12,8 +12,8 @@ public class GildedRose_Multiple_increment_test
     {
         IList<Item> Items = new List<Item>
         {
-            new Item {Name = "foo", SellIn = 5, Quality = 2},
-            new Item {Name = "Aged Brie", SellIn = 5, Quality = 2}
+            new Classic_Item() {Name = "foo", SellIn = 5, Quality = 2},
+            new Cheese_Item() {Name = "Aged Brie", SellIn = 5, Quality = 2}
         };
         GildedRose app = new GildedRose(Items);
         app.UpdateQuality();
